@@ -1,0 +1,355 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-size: 10px;
+    background-color: rgb(252, 240, 214);
+    font-family: "Arima", system-ui;
+    position: relative;
+    
+}
+.front{
+height: 100vh;
+width: 100%;
+}
+#bg{
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+   
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+    color: rgb(59, 5, 94);
+    position: relative;
+    z-index: 2;
+}
+nav .log{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+}
+nav img{
+    height: 4rem;
+}
+
+nav h2{
+    font-size: 2.5rem;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 0 3rem;
+
+}
+nav ul li{
+    list-style: none;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(59, 5, 94);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+nav ul li .light{
+    background-color: rebeccapurple;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding: 0.2rem 1rem;
+    border-radius: 1.2rem;
+}
+nav ul li .mood:hover{
+    background-color: transparent;
+    color: rgb(59, 5, 94);
+    box-shadow: 2px 2px 4px gray ;
+    cursor: pointer;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 6rem;
+    gap: 1rem;
+}
+
+.main .msg h2{
+font-size: 4.5rem;
+}
+.main .msg h2 span{
+    font-family: "Kablammo", system-ui;
+    color: orange;
+}
+
+.main .msg h3{
+    font-size: 2rem;
+}
+.main .msg h3 span{
+    font-family: "Kablammo", system-ui;
+    color: orange;
+    font-size: 2.2rem;
+}
+
+.main #sideImg1{
+    height: 40rem;
+    width: 60rem;
+    
+}
+
+#basit{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#basit h2{
+    font-size: 5rem;
+
+}
+#basit h2 span{
+    font-family: "Kablammo", system-ui;
+    color: orange;
+    font-size: 6rem;
+}
+
+#basit #plant{
+     position: absolute;
+     z-index: 1;
+     height: 10rem;
+     width: 15rem;
+     animation: plant 5s ease-in-out 0s infinite;
+
+}
+
+#basit #plant2{
+    position: absolute;
+     z-index: 1;
+     height: 10rem;
+     width: 15rem;
+     animation: plant2 5s ease-in-out 0s infinite;
+}
+
+@keyframes plant {
+    0%{
+        top:40%;
+        left: 0;
+
+    }
+    17%{
+        left: 10%;
+    }
+    25%{
+        top: 0%;
+        left: 40%;
+    }
+    37%{
+        top: 20%;
+        left: 70%;
+    }
+    50%{
+        top: 40%;
+        left:85%;
+    }
+    67%{
+        left: 70%;
+    }
+    75%{
+        top: 80%;
+        left: 40%;
+    }
+
+    90%{
+        left: 7%;
+    }
+    100%{
+        top: 40%;
+        left: 0;
+    }
+}
+
+@keyframes plant2 {
+    0%{
+        top:40%;
+        right: 0;
+
+    }
+    17%{
+        right: 10%;
+    }
+    25%{
+        top: 0%;
+        right: 40%;
+    }
+    37%{
+        top: 20%;
+        right: 70%;
+    }
+    50%{
+        top: 40%;
+        right:85%;
+    }
+    67%{
+        right: 70%;
+    }
+    75%{
+        top: 80%;
+        right: 40%;
+    }
+
+    90%{
+        right: 7%;
+    }
+    100%{
+        top: 40%;
+        right: 0;
+    }
+}
+
+.notes{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    
+}
+.notes h2{
+    font-size: 4rem;
+    font-weight: 800;
+    color: rgb(59, 5, 94);
+    text-align: center;
+}
+.notes .container{
+    margin: auto;
+    height: 85vh;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: rgb(251, 204, 133);
+    border-radius: 5rem ;
+    
+}
+
+.notes .container .no{
+    height: 20rem;
+    width: 30rem;
+    background-color: rgb(245, 245, 245);
+    border-radius: 2rem;
+    overflow: hidden;
+   
+}
+.notes .container .no img{
+    height: 13rem;
+    width: 30rem;
+   object-fit: cover;
+}
+.notes .container .no .msg{
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+.notes .container .no .msg h3{
+    font-size: 2rem;
+    color: rgb(59, 5, 94);
+}
+.notes .container .no .msg h4{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(59, 5, 94);
+    
+}
+.notes .container .no .msg h4 #span2{
+    color: rgb(251, 165, 7);
+    font-size: 1.8rem;
+    padding-right: 0.5rem;
+
+}
+.notes .container .no .msg h4 #span3:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 1px 1px 5px gray, -1px -1px 5px gray;
+    cursor: pointer;
+    padding: 0 2rem;
+    transition: 0.5s;
+}
+.notes .container .no .msg h4 #span1{
+    text-decoration: line-through;
+    font-size: 1.8rem;
+    padding-right: 1rem;
+    padding-left: .5rem;
+}
+.notes .container .no .msg h4 #span3{
+    font-size: 1.8rem;
+    border-radius: 1rem;
+    color: black;
+    background-color: rgb(255, 174, 0);
+    padding: 0 .7rem;
+}
+
+.notes .popap{
+    background-color: rgb(248, 246, 242);
+    height: 40rem;
+    width: 30rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 3rem;
+    padding: 1.5rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid brown;
+    box-shadow: 2px 2px 5px gray, -2px -2px 5px gray;
+    text-align: center;
+    display: none;
+}
+.notes .popap #i{
+    position: absolute;
+    top: 1.5rem;
+    right:1.5rem;
+    background-color: rgb(251, 165, 7);
+    padding: .5rem;
+    border-radius: .5rem;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+footer{
+    max-width: 100%;
+    background-color: rgb(174, 172, 172);
+    height:4rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    font-size: 2.3rem;
+}
