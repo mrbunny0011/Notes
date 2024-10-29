@@ -259,7 +259,9 @@ font-size: 4.5rem;
     width: 30rem;
     background-color: rgb(245, 245, 245);
     border-radius: 2rem;
-    overflow:scroll;
+    overflow-y: scroll; /* or overflow-x for horizontal scrolling */
+    scrollbar-width: none; /* for Firefox */
+    -ms-overflow-style: none; /* for Internet Explorer and Edge */
    
 }
 .notes .container .no img{
@@ -330,13 +332,8 @@ font-size: 4.5rem;
     border: 2px solid brown;
     box-shadow: 2px 2px 5px gray, -2px -2px 5px gray;
     text-align: center;
-<<<<<<< HEAD
-    color: black;
-=======
-    color:black;
->>>>>>> 667d3dea8a91b03ab74528edc091c743f33da88b
-    display: none;
-    
+    color: rgb(7, 6, 6);
+   display: none;
 }
 .notes .popap a{
     font-size: 2.7rem;
