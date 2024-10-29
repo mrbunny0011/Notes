@@ -259,7 +259,7 @@ font-size: 4.5rem;
     width: 30rem;
     background-color: rgb(245, 245, 245);
     border-radius: 2rem;
-    overflow: hidden;
+    overflow:scroll;
    
 }
 .notes .container .no img{
@@ -325,11 +325,25 @@ font-size: 4.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 1rem;
     border: 2px solid brown;
     box-shadow: 2px 2px 5px gray, -2px -2px 5px gray;
     text-align: center;
     color: black;
     display: none;
+}
+.notes .popap a{
+    font-size: 2.7rem;
+    color: rgb(203, 134, 4);
+    text-decoration: none;
+}
+.notes .popap a #notes{
+    font-family: "Kablammo", system-ui;
+    font-weight: 600;
+    text-decoration: underline;
+    color: rgb(251, 165, 6);
+
 }
 .notes .popap #i{
     position: absolute;
